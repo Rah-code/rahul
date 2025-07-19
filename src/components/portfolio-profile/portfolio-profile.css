@@ -1,0 +1,151 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+    margin-bottom: 60px;
+}
+
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width:1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio__item {
+        padding: 1rem;
+    }
+
+    .portfolio__item h3 {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .portfolio__item-cta a {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .portfolio__item {
+        padding: 0.8rem;
+    }
+
+    .portfolio__item h3 {
+        font-size: 0.9rem;
+        margin: 0.8rem 0;
+    }
+
+    .portfolio__item-cta a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .li12 {
+        display: none;
+    }
+}
+
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list li {
+    margin-right: 20px;
+}
+
+.pagination-list li:last-child {
+    margin-right: 0;
+}
+
+.pagination-list li {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: white;
+}
+
+.pagination-list li:hover {
+    background-color: #ddd;
+}
+
+.pagination-list1 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-list1 li {
+    margin-right: 20px;
+}
+
+.pagination-list1 li:last-child {
+    margin-right: 0;
+}
+
+.pagination-list1 li {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.pagination-list1 li:hover {
+    background-color: #ddd;
+}
